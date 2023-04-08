@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="./style.css">
     <title>Weather Dashboard</title>
 </head>
-<body>
+<body class = 'container'>
     <header>
         <h1>Weather Dashboard</h1>
     </header>
-    <aside class = 'container'>
+    <aside class>
         <label for="search">Search for a City:</label>
         <input type="text" id="search" name = 'search' placeholder="input city">
-        <button type="button" id = 'searchBtn' class="btn">Search</button>
+        <button type="button" id = 'searchBtn' class="btn btn-primary ">Search</button>
         <table>
             <ul class="list-group">
                 <li class="list-group-item">An item</li>
@@ -28,7 +28,7 @@
     </aside>
     <section class = 'weather container'>
         <section id = 'today' class = 'row'>
-            <h2>City and Date</h2>
+            <h2 id = 'cityTime'>City and Date</h2>
             <ul id = 'dataList'>
                <li id = 'temp'>Temp:</li>
                 <li id = 'wind'>Wind:</li>
@@ -50,7 +50,7 @@
               <div id = 'day-2' class="card col" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title">City and Date</h5>
-                  <ul>
+                  <ul id = 'dataList'>
                     <li id = 'temp'>Temp:</li>
                     <li id = 'wind'>Wind:</li>
                     <li id = 'hum'>Humidity:</li>
@@ -60,7 +60,7 @@
               <div id = 'day-3' class="card col" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title">City and Date</h5>
-                  <ul>
+                  <ul id = 'dataList'>
                     <li id = 'temp'>Temp:</li>
                     <li id = 'wind'>Wind:</li>
                     <li id = 'hum'>Humidity:</li>
@@ -70,7 +70,7 @@
               <div id = 'day-4' class="card col" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title">City and Date</h5>
-                  <ul>
+                  <ul id = 'dataList'>
                     <li id = 'temp'>Temp:</li>
                     <li id = 'wind'>Wind:</li>
                     <li id = 'hum'>Humidity:</li>
@@ -80,7 +80,7 @@
               <div id = 'day-5' class="card col" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title">City and Date</h5>
-                  <ul>
+                  <ul id = 'dataList'>
                     <li id = 'temp'>Temp:</li>
                     <li id = 'wind'>Wind:</li>
                     <li id = 'hum'>Humidity:</li>
