@@ -5,8 +5,8 @@ var apiKey = 'appid=5eb1683a4381f8f5d69e894d1120f7a0'
 dayObj = dayjs.unix(1680987600)
 var forcastCont = $('.weather')
 var prevSearch = $('.list-group')
-forcastCont.hide()
-prevSearch.hide()
+// forcastCont.hide()
+// prevSearch.hide()
 
 
 
