@@ -3,12 +3,18 @@ var searchBtn = $('#searchBtn')
 var GeoURL = 'http://api.openweathermap.org/geo/1.0/direct?'
 var apiKey = 'appid=5eb1683a4381f8f5d69e894d1120f7a0'
 dayObj = dayjs.unix(1680987600)
+var forcastCont = $('.weather')
+var prevSearch = $('.list-group')
+forcastCont.hide()
+prevSearch.hide()
 
 
 
 searchBtn.on('click',function(){
     var searchVal = $('#search').val()
-    coords = getApi(searchVal)
+    if (searchVal != ''){
+        coords = getApi(searchVal)
+    }
 
   })
 
@@ -26,7 +32,7 @@ searchBtn.on('click',function(){
           return response.json()
       })
       .then(function(data){
-          console.log(data)
+          forcastCont.show()
           var weatherArry = data.list
           var todayEl = $('#today')
           var todayH2 = todayEl.children('#cityTime')
