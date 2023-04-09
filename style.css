@@ -2,9 +2,18 @@ li{
     list-style-type: none;
 }
 header{
-    background-color: green;
+    background-color: #c57955;
     color: white;
 }
 .card-body{
-    background-color: gray;
+    background-color: #f8cfb8;
+}
+body{
+ background-color: #bdc8d3;
+}
+.weather{
+    display:none;
+}
+#today{
+    border: 2px solid black;
 }

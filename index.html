@@ -17,87 +17,90 @@
     <h1>Weather Dashboard</h1>
   </header>
   <body class="container">
-    <aside class="col-2">
-      <label for="search">Search for a City:</label>
-      <input type="text" id="search" name="search" placeholder="input city" />
-      <button type="button" id="searchBtn" class="btn btn-primary">
-        Search
-      </button>
-      <table>
-          <ul class="prev-search list-group">
-              <li>first search</li>
-              <li>second search</li>
-              <li>third search</li>
-              <li>fourth search</li>
-              <li>fifth search</li>
-
-          </ul>
-    </table>
-</aside>
-<section class="weather col-10 gx-0">
-      <section id="today">
-        <h2 id="cityTime">City and Date</h2>
-        <ul id="dataList">
-          <li id="temp">Temp:</li>
-          <li id="wind">Wind:</li>
-          <li id="hum">Humidity:</li>
-        </ul>
-      </section>
-      <section class="forcast row">
-        <h3>5-Day Forcast</h3>
-        <div id="day-1" class="card" style="width: 18rem">
-          <div class="card-body">
-            <h5 class="card-title">City and Date</h5>
+    <section class="row">
+        <aside class="col-2">
+          <label for="search">Search for a City:</label>
+          <input type="text" id="search" name="search" placeholder="input city" />
+          <button type="button" id="searchBtn" class="btn btn-primary">
+            Search
+          </button>
+          <table>
+              <ul class="prev-search list-group">
+    
+              </ul>
+        </table>
+    </aside>
+    <section class="weather col-10 p-2">
+          <section id="today">
+            <h2 id="cityTime">City and Date</h2>
+            <img class = 'icon' src="" alt="">
             <ul id="dataList">
               <li id="temp">Temp:</li>
               <li id="wind">Wind:</li>
               <li id="hum">Humidity:</li>
             </ul>
-          </div>
-        </div>
-        <div id="day-2" class="card" style="width: 18rem">
-          <div class="card-body">
-            <h5 class="card-title">City and Date</h5>
-            <ul id="dataList">
-              <li id="temp">Temp:</li>
-              <li id="wind">Wind:</li>
-              <li id="hum">Humidity:</li>
-            </ul>
-          </div>
-        </div>
-        <div id="day-3" class="card" style="width: 18rem">
-          <div class="card-body">
-            <h5 class="card-title">City and Date</h5>
-            <ul id="dataList">
-              <li id="temp">Temp:</li>
-              <li id="wind">Wind:</li>
-              <li id="hum">Humidity:</li>
-            </ul>
-          </div>
-        </div>
-        <div id="day-4" class="card" style="width: 18rem">
-          <div class="card-body">
-            <h5 class="card-title">City and Date</h5>
-            <ul id="dataList">
-              <li id="temp">Temp:</li>
-              <li id="wind">Wind:</li>
-              <li id="hum">Humidity:</li>
-            </ul>
-          </div>
-        </div>
-        <div id="day-5" class="card" style="width: 18rem">
-          <div class="card-body">
-            <h5 class="card-title">City and Date</h5>
-            <ul id="dataList">
-              <li id="temp">Temp:</li>
-              <li id="wind">Wind:</li>
-              <li id="hum">Humidity:</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+          </section>
+          <section class="forcast row p-2">
+            <h3>5-Day Forcast</h3>
+            <div id="day-1" class="card col " style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">City and Date</h5>
+                <img class = 'icon' src="" alt="">
+                <ul id="dataList">
+                  <li id="temp">Temp:</li>
+                  <li id="wind">Wind:</li>
+                  <li id="hum">Humidity:</li>
+                </ul>
+              </div>
+            </div>
+            <div id="day-2" class="card col " style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">City and Date</h5>
+                <img class = 'icon' src="" alt="">
+                <ul id="dataList">
+                  <li id="temp">Temp:</li>
+                  <li id="wind">Wind:</li>
+                  <li id="hum">Humidity:</li>
+                </ul>
+              </div>
+            </div>
+            <div id="day-3" class="card col" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">City and Date</h5>
+                <img class = 'icon' src="" alt="">
+                <ul id="dataList">
+                  <li id="temp">Temp:</li>
+                  <li id="wind">Wind:</li>
+                  <li id="hum">Humidity:</li>
+                </ul>
+              </div>
+            </div>
+            <div id="day-4" class="card col" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">City and Date</h5>
+                <img class = 'icon' src="" alt="">
+                <ul id="dataList">
+                  <li id="temp">Temp:</li>
+                  <li id="wind">Wind:</li>
+                  <li id="hum">Humidity:</li>
+                </ul>
+              </div>
+            </div>
+            <div id="day-5" class="card col" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">City and Date</h5>
+                <img class = 'icon' src="" alt="">
+                <ul id="dataList">
+                  <li id="temp">Temp:</li>
+                  <li id="wind">Wind:</li>
+                  <li id="hum">Humidity:</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </section>
+      </body>
     </section>
-  </body>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script
     src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
