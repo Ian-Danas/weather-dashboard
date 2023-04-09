@@ -2,18 +2,24 @@ var search = $('#search')
 var searchBtn = $('#searchBtn')
 var GeoURL = 'http://api.openweathermap.org/geo/1.0/direct?'
 var apiKey = 'appid=5eb1683a4381f8f5d69e894d1120f7a0'
-dayObj = dayjs.unix(1680987600)
 var forcastCont = $('.weather')
-var prevSearch = $('.list-group')
+var prevSearch = $('.prev-search')
 // forcastCont.hide()
 // prevSearch.hide()
-
-
+var searches = []
+// updateSearch()
 
 searchBtn.on('click',function(){
     var searchVal = $('#search').val()
     if (searchVal != ''){
         coords = getApi(searchVal)
+        lastSearch = JSON.parse(localStorage.getItem('history'))||[]
+        if(lastSearch.length = 5){
+            lastSearch.pop()
+            lastSearch.unshift(searchVal)
+            localStorage.setItem('history',JSON.stringify(lastSearch))
+        }
+        updateSearch()
     }
 
   })
@@ -71,4 +77,15 @@ searchBtn.on('click',function(){
         
 })
   })
+}
+
+function updateSearch(){
+    searchArry = JSON.parse(localStorage.getItem('history'))||[]
+    for (let i = 0; i < searchArry.length; i++) {
+        var child = '.prev-search:nth-child(' + i + ')'
+        var searchLi = $(child)
+        city = searchArry[i]
+        searchLi.text(city)
+        
+    }
 }
