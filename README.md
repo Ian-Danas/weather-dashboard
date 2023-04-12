@@ -10,6 +10,10 @@ check out the deployed website here!: https://ian-danas.github.io/weather-dashbo
 
 To use this app the user has two choices. On page load there will be a search bar and buttons below with previous searches that have been stored in local storage.The user can click on one of the previous searches and see the results or the user can enter a new city by typing in the search bar and pressing search. The result will then be populated on the right hand side of the screen. From there they can search for a new city or they can click on one of the previous searches to see those results.
 
+![](./homePage.png)
+![](./aftersearch.png)
+
+
 
 ## Credits
 bootstrap used for the styling : https://getbootstrap.com/ 
