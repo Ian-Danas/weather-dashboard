@@ -45,14 +45,14 @@ searchBtn.on('click',function(){
 
 
   function getApi(cityName) {
-    fetch('http://api.openweathermap.org/geo/1.0/direct?q='+cityName+'&limit=5&appid=5eb1683a4381f8f5d69e894d1120f7a0')
+    fetch('https://api.openweathermap.org/geo/1.0/direct?q='+cityName+'&limit=5&appid=5eb1683a4381f8f5d69e894d1120f7a0')
       .then(function (response) {
         return response.json()
     })
     .then(function(data){
         var lat = data[0].lat
         var lon = data[0].lon
-        fetch('http://api.openweathermap.org/data/2.5/forecast?lat='+lat+'&lon='+lon+'&units=imperial&appid=5eb1683a4381f8f5d69e894d1120f7a0')
+        fetch('https://api.openweathermap.org/data/2.5/forecast?lat='+lat+'&lon='+lon+'&units=imperial&appid=5eb1683a4381f8f5d69e894d1120f7a0')
         .then(function (response) {
           return response.json()
       })
